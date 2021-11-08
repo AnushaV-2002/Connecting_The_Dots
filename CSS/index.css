@@ -170,6 +170,73 @@
 /*media query for Banner section ends*/
 /*styling for banner section ends*/
 
+
+.event_countdown_section{
+  padding:3em;
+	max-width:100%;
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:2em;
+  background-image: url('../images/event_countdown_png_new.png');
+  background-repeat: repeat;
+  backdrop-filter: blur(100px);
+}
+.event_countdown_heading{
+  color:#ffffff;
+	align-self: center;
+	justify-self: center;
+  font-size:40px;
+}
+.event_countdown_conto{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  justify-items: center;
+}
+.event_conto_1,.event_conto_2,.event_conto_3,.event_conto_4{
+  width:60%;
+  background-color: rgba(119,37,131,60%);
+}
+.conto_1,.conto_2,.conto_3,.conto_4{
+  height:70px;
+  font-size:60px;
+  text-align: center;
+  line-height: 80px;
+  color:white;
+}
+.DAY,.HR,.MIN,.SEC{
+  font-size:1.875em;
+  font-style: italic;
+  text-align: center;
+  color:white;
+}
+
+/*mediaquery for event countdown section*/
+@media all and (max-width:900px){
+  .event_countdown_section{
+    padding:1em;
+  }
+  .event_countdown_conto{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap:1em;
+  }
+}
+@media all and (max-width:700px){
+  .event_countdown_section{
+    padding:1em;
+  }
+  .event_countdown_conto{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+   
+    gap:1em;
+  }
+}
+
+
+
 /*styling for about_wie section starts*/
 .about_wie_section{
   padding:3em;
@@ -327,8 +394,7 @@ hr{
 	display:grid;
 	grid-template-columns: repeat(1,1fr);
   gap:1.5em;
-  background-image: url('../images/about_background.png');
-  background-repeat: no-repeat;
+  background-color:rgba(119,37,131,100%) ;
 }
 .head_ctd_con{
     display: grid;
@@ -336,7 +402,7 @@ hr{
     gap:1em;
   }
 .about_wie_ctd_heading{
-  color:#772583;
+  color:white;
 	align-self: center;
 	justify-self: center;
 }
@@ -349,6 +415,7 @@ hr{
 }
 .about_ctd_desc{
   line-height:1.7em;
+  color:white;
 }
 
 /*media query for about_wie_ctd section*/
@@ -367,6 +434,7 @@ hr{
 }
 @media all and (max-width:700px){
   hr{
+    
     width:40%;
     text-align: center;
   }
@@ -426,6 +494,64 @@ hr{
   justify-self: center;
   align-items: center;
 }
+
+
+
+
+
+
+.button-35 {
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  appearance: none;
+  
+ 
+  background-color:#772583;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-35:focus {
+  box-shadow: #772583 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #772583 0 -3px 0 inset;
+}
+
+.button-35:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #772583 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-35:active {
+  box-shadow: #772583 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.button-35 a{
+  text-decoration: none;
+  color:white;
+}
 /*mediaquery for speakers section*/
 @media all and (max-width:900px){
   .speakers_container{
@@ -450,8 +576,7 @@ hr{
 	display:grid;
 	grid-template-columns: repeat(1,1fr);
   gap:1.5em;
-  background-image: url('../images/about_background.png');
-  background-repeat: no-repeat;
+  background-color:rgba(119,37,131,100%) ;
 }
 .head_why_con{
   display: grid;
@@ -459,7 +584,7 @@ hr{
   gap:1em;
 }
 .about_wie_why_heading{
-  color:#772583;
+  color:white;
 	align-self: center;
 	justify-self: center;
 }
@@ -471,6 +596,7 @@ hr{
 	justify-items: center;
 }
 .about_why_desc{
+  color:white;
   line-height:1.7em;
 }
 /*mediaquery for ieee_wie_why section*/
@@ -488,6 +614,7 @@ hr{
 
 }
 @media all and (max-width:700px){
+ 
   hr{
     width:40%;
     text-align: center;
@@ -495,4 +622,65 @@ hr{
   .about_wie_why_section{
     padding:1em;
   }
+}
+footer{
+  background-color: rgba(117,120,123,80%);
+  padding:3em;
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:2em;
+}
+.social_media_container{
+   display:grid;
+   grid-template-columns: 1fr;
+   gap:1em;
+   align-items: center;
+ justify-items: center;
+   
+}
+.social_media{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:1em;
+ 
+}
+.facebook,.instagram,.linkedIn{
+  background-color: transparent;
+  border:1px solid rgba(225,225,225,0.8);
+  border-radius: 50%;
+  width:30px;
+  height:30px;
+  text-align: center;
+  line-height: 30px;
+}
+.facebook:hover,.instagram:hover,.linkedIn:hover{
+  background-color: #772583;
+}
+.fa{
+ font-weight: 700;
+  color:#ffffff;
+}
+
+.social_links a{
+  font-weight: 700;
+ text-decoration: none;
+ color:#772583;
+  font-size: 16px;
+  text-align: center;
+}
+.social_links a:hover{
+  color:#772583;
+}
+@media all and (max-width:700px){
+  footer{
+    background-color: rgba(117,120,123,80%);
+    padding:1em;
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+}
+.copyright_container{
+  text-align: center;
+  align-self: center;
+  justify-self: center;
 }
